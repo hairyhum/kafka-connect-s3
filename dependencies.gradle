@@ -14,10 +14,10 @@ ext {
   libraries = [:]
 }
 
-versions.awsSdkS3 = '1.11.803'
+versions.awsSdkS3 = '1.12.261'
 versions.curatorTest = '1.2.6'
 versions.guava = '29.0-jre'
-versions.jackson = '2.10.4'
+versions.jackson = '2.12.7.1'
 versions.jakartaXml = '2.3.3'
 versions.junit = '4.13'
 versions.kafka = '2.5.1'
