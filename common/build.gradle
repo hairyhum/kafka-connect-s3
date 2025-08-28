@@ -17,6 +17,6 @@ dependencies {
 	implementation project(':api')
 	libraries.with {
 		implementation awsSdkS3, jackson, jakartaXml, kafkaConnectApi
-		testCompile guava, junit, mockito
+		testImplementation guava, junit, mockito
 	}
 }
