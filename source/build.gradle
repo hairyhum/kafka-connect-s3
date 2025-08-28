@@ -14,7 +14,7 @@ apply from: '../dependencies.gradle'
 description = "Kafka Connect Source that reads from S3"
 
 dependencies {
-	compile project(':common')
+	implementation project(':common')
 
 	testCompile project(':sink')
 	libraries.with {

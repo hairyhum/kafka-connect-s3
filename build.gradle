@@ -17,6 +17,7 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ConfigureShadowRelocatio
 plugins {
   id 'base'
   id 'java'
+  id 'maven-publish'
   id 'com.palantir.git-version' version '0.12.3'
   id 'com.github.johnrengelman.shadow' version '5.2.0'
   id 'project-report'
@@ -40,6 +41,7 @@ ext {
 allprojects {
   apply plugin: 'java'
   apply plugin: 'idea'
+  apply plugin: 'maven-publish'
 
   group = 'com.spredfast.kafka.connect.s3'
   sourceCompatibility = 1.8
@@ -61,8 +63,8 @@ configurations {
 }
 
 dependencies {
-  compile project(':sink')
-  compile project(':source')
+  implementation project(':sink')
+  implementation project(':source')
   javaagent libraries.javaagent
 }
 
